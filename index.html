@@ -4,21 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home_Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <img src="images/logo.png" alt="BandWidth's lovely logo.">
-    <h1>Üdvözöljük a BandWidth weboldalán</h1>
-    <br>
-    <p>Oktató anyag</p>
-    <ul>
-        <li><a href="DHCP.html">DHCP</a></li>
-    </ul>
-    <br>
-    <p>Csapatunk tagjai:</p>
-    <ul>
-        <li><a href="Karoly.html">Bemutatkozó: DKL</a></li>
-        <li><a href="levente.html">Bemutatkozó: KL</a></li>
-    </ul>
-    <img src="images/gyuszi.jpg" alt="Gyuszi is hard at work.">
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="BandWidth logo" height="40" class="d-inline-block align-text-top">
+                BandWidth
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Üdvözöljük a BandWidth weboldalán</h1>
+
+        <!-- Company description -->
+        <p class="lead mb-5">
+            A BandWidth egy kis, de motivált csapat, amely két főből és néhány társult munkatársból áll. 
+            Már most is jól képzett szakemberek vagyunk, ugyanakkor folyamatosan tanulunk, hogy mindig a 
+            legkorszerűbb hálózati technológiákkal dolgozhassunk.
+        </p>
+
+        <p class="lead">Oktató anyag</p>
+        <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item"><a href="DHCP.html" class="text-decoration-none">DHCP</a></li>
+        </ul>
+
+        <p class="lead">Csapatunk tagjai:</p>
+        <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item"><a href="Karoly.html" class="text-decoration-none">Bemutatkozó: DKL</a></li>
+            <li class="list-group-item"><a href="levente.html" class="text-decoration-none">Bemutatkozó: KL</a></li>
+        </ul>
+
+        <div class="mt-4">
+            <img src="images/gyuszi.jpg" alt="Gyuszi is hard at work." class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
