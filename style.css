@@ -1,0 +1,26 @@
+    .color-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      background: linear-gradient(to left, #ed1556 50%, #e98e90 50%);
+      background-size: 200% 100%;
+      background-position: left bottom;
+      transition: background-position 0.75s ease-in-out;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .color-button:hover {
+      background-position: right bottom;
+    }
+
+    .color-button:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
