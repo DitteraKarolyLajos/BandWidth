@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="Bemutatkozó - Levente" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Bemutatkozó - Levente</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KL</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ensure both images are about the same height */
+    .profile-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="BandWidth logo" height="40" class="d-inline-block align-text-top">
-                BandWidth
-            </a>
-        </div>
-    </nav>
-    <h1 class="text-center">A nevem Kovács Levente</h1>
-    <p>Hobby:</p>
-    <p>Kedvenc sport: JerkMate</p>
-    
-    
-    
-    <img src="images/labosgif.gif" alt="A Kalcsi kép">
-    <p><i>A legkedvencebb állatom - A Kalcsi</i></p>
-    
-    
-    <a href="index.html">Vissza a főoldalra</a>
+<body class="bg-light">
+
+  <!-- Navbar with logo -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="BandWidth logo" height="40" class="d-inline-block align-text-top">
+        BandWidth
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">A nevem Kovács Levente</h1>
+
+    <ul class="list-unstyled">
+      <li class="text-center mb-4">
+        <img src="images/levente.jpg" alt="Kovács Leventéről egy fotó" class="img-fluid rounded shadow profile-img">
+      </li>
+
+      <li class="mb-3">
+        <p class="lead">
+          Hobbiaim közé tartozik a rajzolás, 3D nyomtatás és a videóvágás. Mindhármat nagyon szeretem csinálni, de a 3D nyomtatás áll a legközelebb a szívemhez, mivel bármilyen 3D modellt fizikai tárggyá tudok alakítani pár órán belül és ez szerintem az egyik legjobb dolog a Földön.
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <p class="lead">
+          Az én kedvenc sportom a sportlövészet. Pár éve jártam edzésekre, de abba nem hagytam. Viszont újra el akarom kezdeni, mivel nagyon szórakoztató.
+        </p>
+      </li>
+
+      <li class="text-center mb-4">
+        <img src="images/barany.jpg" alt="Kedvenc állatomról egy fotó" class="img-fluid rounded shadow profile-img">
+      </li>
+
+      <li class="mb-3">
+        <p class="lead">
+          A kedvenc állatom a bárány, mivel van egy bárány plüssöm amivel kis koromban nagyon sokmindenen túlestem és nagyon a szívemhez nőtt.
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer link -->
+  <footer class="bg-dark text-center py-3 mt-5">
+    <p style="color: white;">© 2025 BandWidth</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
