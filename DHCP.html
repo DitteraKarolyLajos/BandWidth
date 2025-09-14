@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="DHCP" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>DHCP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DHCP</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ensure both images are about the same height */
+    .profile-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-light">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="BandWidth logo" height="40" class="d-inline-block align-text-top">
-                BandWidth
-            </a>
-        </div>
-    </nav>
-    <h1 class="text-center">Dynamic Host Configuration Protocol</h1>
-    <p>A DHCP egy olyan protokoll ami egy hálózatban lévő host eszközöket lát el konfigurációs információkat automatikusan. Mivel a hálózatban nem minden adat mint például <i>egy PC IP címe</i> nem minden esetben fontos, hogy ugyanaz maradjon, így ha változik akkor a DHCP dinamikusan ad ki új címeket. OSI modell 7. szintjén az Applikációs rétegen helyezkedik el.</p>
-    
-    
-    <img src="" alt="DHCP folyamat">
-    
-    
-    
-    
-    
-    
-    
-    
-    <a href="index.html">Vissza a főoldalra</a>
+  <!-- Navbar with logo -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="BandWidth logo" height="40" class="d-inline-block align-text-top">
+        BandWidth
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Dynamic Host Configuration Protocol</h1>
+
+    <ul class="list-unstyled">
+      <li class="mb-3">
+        <p class="lead" style="text-indent: 30px;">
+          A DHCP (Dynamic Host Configuration Protocol) egy olyan protokoll, ami a hálózatban lévő host eszközöket látja el konfigurációs információkkal automatikusan, például IP-címmel, alhálózati maszkkal vagy alapértelmezett átjáróval. Mivel a hálózatban nem minden adat, mint például egy <i>PC IP-címe</i>, igényli, hogy mindig ugyanaz maradjon, a DHCP képes dinamikusan új címeket kiosztani, amikor szükséges. Ez nagyban megkönnyíti a hálózat üzemeltetését és csökkenti az adminisztrációs terheket. 
+          
+        </p>
+      </li>
+
+      <li class="mb-3">
+        <p class="lead" style="text-indent: 30px;">
+          A protokoll az OSI modell 7. szintjén, az Applikációs rétegben helyezkedik el, és alapvető szerepet játszik a modern hálózatok működésében.
+        </p>
+      </li>
+
+      <li class="text-center mb-4">
+        <img src="images/how-dhcp-works.png" alt="A DHCP működése" class="img-fluid rounded shadow profile-img">
+        <p>A DHCP működése</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer link -->
+  <footer class="bg-dark text-center py-3 mt-5">
+    <p style="color: white;">© 2025 BandWidth</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
